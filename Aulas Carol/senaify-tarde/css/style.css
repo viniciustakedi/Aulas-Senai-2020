@@ -1,0 +1,98 @@
+/* Body */
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    /* Altura da viewport */
+    height: 100vh;
+    /* Chamar imagem de fundo e não repetir */
+    background: url('../img/bg.jpg') no-repeat;
+    /* Cobrir todo espaço da tela */
+    background-size: cover;
+    /* para os blocos ficarem flexiveis */
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    /* Alinhar horizontalmente */
+    justify-content: space-between;
+    /* Alinhar verticalmente */
+    align-items: center;
+    background: #444;
+    padding: 10px 20px;
+}
+
+nav>button {
+    background: #ffff;
+    border: none;
+    padding: 10px 20px;
+    color: #444;
+    /* Tamanho da fonte */
+    font-size: 12px;
+    /* Espessura da fonte */
+    font-weight: 700;
+}
+
+main {
+    /* Para o texto ficar no meio da tela/vertical */
+    flex: auto;
+    color: #fff;
+    /* Para os textos ficarem flexiveis */
+    display: flex;
+    /* Direcionamento de colunas */
+    flex-direction: column;
+    /* Alinhar verticalmente ao centro */
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+#modal {
+    background: #ffff;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#modal>img {
+    width: 100px;
+}
+
+#fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Fazer a div ficar invisivel */
+    display: none;
+}
+
+#fundo.visivel {
+    /* Fazer a div voltar a aparecer */
+    display: block;
+}
+
+#fechar {
+    color: #ff0000;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
