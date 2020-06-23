@@ -1,2 +1,2 @@
 # Aulas-Senai-2020
-Aulas no SENAI de Informatica Sp
+Aulas o SENAI de Informatica Sp
